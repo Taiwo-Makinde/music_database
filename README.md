@@ -6,7 +6,7 @@ A relational database schema designed for music streaming platforms, supporting 
 
 -- **Database Type**: Postgres 18
 
--- **Schema Design**: Snowflake schema(hioghly normalized
+-- **Schema Design**: Snowflake schema(highly normalized)
 
 -- **Optimization**: OLTP (Online Transaction Processing)
 
