@@ -19,47 +19,47 @@ A relational database schema designed for music streaming platforms, supporting 
 
 ## Architecture 
 
--- **Database Type**: Postgres 18
+- **Database Type**: Postgres 18
 
--- **Schema Design**: SnowFlake schema(highly normalized)
+- **Schema Design**: SnowFlake schema(highly normalized)
 
--- **Optimization**: OLTP (Online Transaction Processing)
+- **Optimization**: OLTP (Online Transaction Processing)
 
--- **Normalization Level**: 3NF (Third Normal Form)
+- **Normalization Level**: 3NF (Third Normal Form)
 
 This database is designed to handle high-volume transactional operations such as user registrations, playlist updates, and real-time streaming events while maintaining data integrity and minimizing data redundancy through normalization. 
 
 ### Design Principles 
 
--- **Transactional Integrity**: ACID compliance for reliable concurrent operations. 
+- **Transactional Integrity**: ACID compliance for reliable concurrent operations. 
 
--- **Data Consistency**: Normalization eliminates update anomalies and redundancy.
+- **Data Consistency**: Normalization eliminates update anomalies and redundancy.
 
--- **Scalability**: Optimized for frequent INSERT, UPDATE, and DELETE operations.
+- **Scalability**: Optimized for frequent INSERT, UPDATE, and DELETE operations.
 
--- **Referential Integrity**: Foreign key constraints maintain relationship consistency
+- **Referential Integrity**: Foreign key constraints maintain relationship consistency
 
 ## Features
 
--- Complete artist, albums, and track catalog management
+- Complete artist, albums, and track catalog management
 
--- User profiles with listening history and preferences
+- User profiles with listening history and preferences
 
--- Playlist creation and sharing capabilities
+- Playlist creation and sharing capabilities
 
--- Subscription tier management 
+- Subscription tier management 
 
--- Optimised for real-time streaming analytics and metrics
+- Optimised for real-time streaming analytics and metrics
 
--- Optimised for search functionality across artists, albums, tracks, labels, etc.  
+- Optimised for search functionality across artists, albums, tracks, labels, etc.  
 
--- Genre and mood categorization
+- Genre and mood categorization
 
--- User follow system for artists and other users
+- User follow system for artists and other users
 
--- Track and playlist sharing
+- Track and playlist sharing
 
--- Partitioned tables for efficient 'Wrapped' trend analytics and yearly listening summaries 
+- Partitioned tables for efficient 'Wrapped' trend analytics and yearly listening summaries 
 
 
 ## Database-Schema
@@ -67,30 +67,30 @@ This database is designed to handle high-volume transactional operations such as
 The database includes the following main entities, among others:
 
 ### Core-Table
--- 'users' - User accounts and profiles 
--- 'artists' - Music artists and bands
--- 'album' - Album information 
--- 'tracks' - Individual songs
--- 'playlists' - User-created playlists
+- 'users' - User accounts and profiles 
+- 'artists' - Music artists and bands
+- 'album' - Album information 
+- 'tracks' - Individual songs
+- 'playlists' - User-created playlists
 
 ### Junction Tables
 
--- 'playlists_tracks' - Playlist-Track relationships
--- 'albums_artists' - Album-Artists relationships for collaboration 
--- 'track-genres' - Track-genre classifications
+- 'playlists_tracks' - Playlist-Track relationships
+- 'albums_artists' - Album-Artists relationships for collaboration 
+- 'track-genres' - Track-genre classifications
 
 ### Transaction-Tables
 
--- 'streams' - streaming event logs 
---  'subscriptions' - User subscriptions tiers and billing 
--- 'user_follows' - User following relationships
--- 'likes' - user likes ontracks, albums and playlists. 
+- 'streams' - streaming event logs 
+-  'subscriptions' - User subscriptions tiers and billing 
+- 'user_follows' - User following relationships
+- 'likes' - user likes ontracks, albums and playlists. 
 
 ### Supporting-Tables
 
--- 'countries' - Geographic information 
--- 'labels' - Record labels 
--- 'genres' - Music genre classification 
+- 'countries' - Geographic information 
+- 'labels' - Record labels 
+- 'genres' - Music genre classification 
 
 See [schema_diagram.png](diagrams/scham_diagram.png) for the complete ER diagram and all the available tables. 
 
@@ -102,8 +102,8 @@ See [schema_diagram.png](diagrams/scham_diagram.png) for the complete ER diagram
 
 ## Performance-Considerations
 
--- Indexes are created on frequently queried columns (user_id, track_id, artist_id)
--- Materialized views for complex analytical queries
+- Indexes are created on frequently queried columns (user_id, track_id, artist_id)
+- Materialized views for complex analytical queries
 
 
 ## Future-Enhancements
@@ -127,7 +127,7 @@ See [schema_diagram.png](diagrams/scham_diagram.png) for the complete ER diagram
 
 ## Acknowledgements
 
--- Inspired by real-world music streaming platforms 
+- Inspired by real-world music streaming platforms 
 
 
  ---
