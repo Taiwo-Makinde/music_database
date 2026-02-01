@@ -29,6 +29,8 @@ A relational database schema designed for music streaming platforms, supporting 
 
 This database is designed to handle high-volume transactional operations such as user registrations, playlist updates, and real-time streaming events while maintaining data integrity and minimizing data redundancy through normalization. 
 
+---
+
 ### Design Principles 
 
 - **Transactional Integrity**: ACID compliance for reliable concurrent operations. 
@@ -129,11 +131,12 @@ See [schema_diagram.png](diagrams/scham_diagram.png) for the complete ER diagram
 
 - Inspired by real-world music streaming platforms 
 
-
- ---
-
- ⭐  If you find this project helpful, please give it a star! 
  
 ## Version-History
 
 ### Version 1.0.1 (February 2026)
+
+
+---
+
+ ⭐  If you find this project helpful, please give it a star! 
